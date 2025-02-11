@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio de Proyectos de Machine Learning y Análisis de Datos">
-    <title>Mi Portafolio de Proyectos</title>
-    
-    <!-- Estilos incrustados -->
+    <title>Portafolio de Proyectos</title>
+
     <style>
-        /* General */
+        /* Reset de estilos */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        /* Estilos Generales */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             color: #333;
-            background-color: #f4f4f9;
+            line-height: 1.6;
         }
 
-        /* Contenedor central */
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Contenedor */
         .container {
             width: 80%;
             margin: 0 auto;
@@ -28,99 +38,150 @@
 
         /* Header */
         header {
-            background-color: #24292f;
+            background-color: #0d1117;
+            color: white;
             padding: 20px 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 10;
         }
+
         header .logo {
-            width: 50px;
-            height: auto;
+            max-width: 40px;
+            margin-left: 20px;
             display: inline-block;
+        }
+
+        header nav {
+            float: right;
             margin-right: 20px;
         }
-        header nav {
-            display: inline-block;
-            float: right;
-        }
+
         header nav a {
             color: white;
-            text-decoration: none;
             margin-left: 20px;
             font-weight: bold;
-        }
-        header nav a:hover {
-            color: #4CAF50;
+            text-transform: uppercase;
         }
 
-        /* Banner */
-        .banner {
-            background: linear-gradient(to right, #4CAF50, #388E3C);
+        header nav a:hover {
+            color: #58a6ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #58a6ff, #6e7a8a);
             color: white;
+            padding: 150px 20px;
             text-align: center;
-            padding: 100px 0;
-            margin-top: 60px;
         }
-        .banner h1 {
+
+        .hero h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
         }
-        .banner h1 span {
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .hero span {
             color: #ffeb3b;
         }
-        .banner p {
-            font-size: 1.2rem;
-            margin-top: 20px;
+
+        /* Sección de Proyectos */
+        .projects {
+            padding: 60px 0;
+            background-color: #fff;
         }
 
-        /* Sección de proyectos */
-        .section {
-            padding: 60px 0;
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
         }
-        .project-cards {
-            display: flex;
-            gap: 30px;
-            justify-content: space-between;
-        }
-        .project-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
+
+        .projects .project-card {
+            display: inline-block;
             width: 30%;
+            margin: 0 15px 30px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
         }
-        .project-card h3 {
+
+        .projects .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects .project-card h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
         }
-        .project-card p {
-            margin-bottom: 20px;
+
+        .projects .project-card p {
+            font-size: 1rem;
+            color: #555;
         }
-        .project-card a {
-            text-decoration: none;
-            color: #4CAF50;
+
+        .projects .project-card a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #58a6ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-weight: bold;
         }
-        .project-card a:hover {
-            text-decoration: underline;
+
+        .projects .project-card a:hover {
+            background-color: #6e7a8a;
+        }
+
+        /* Contacto */
+        .contact {
+            padding: 60px 0;
+            background-color: #0d1117;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .contact p {
+            margin-top: 10px;
+        }
+
+        .contact a {
+            color: #58a6ff;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            color: #ffeb3b;
         }
 
         /* Footer */
         footer {
-            background-color: #24292f;
+            background-color: #0d1117;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
+
         footer a {
-            color: #4CAF50;
-            text-decoration: none;
+            color: #58a6ff;
         }
+
         footer a:hover {
-            text-decoration: underline;
+            color: #ffeb3b;
         }
     </style>
 </head>
@@ -137,57 +198,52 @@
         </div>
     </header>
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="banner-content">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
             <h1>Hola, soy <span>Tu Nombre</span></h1>
-            <p>Un apasionado del Machine Learning y Análisis de Datos. Aquí encontrarás algunos de mis proyectos más recientes.</p>
+            <p>Un apasionado del Machine Learning y el Análisis de Datos. Bienvenido a mi portafolio.</p>
         </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="section">
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="projects">
         <div class="container">
             <h2>Proyectos Destacados</h2>
-            <div class="project-cards">
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <h3>Proyecto 1: Clasificación de Imágenes</h3>
-                    <p>Clasificación de imágenes utilizando redes neuronales convolucionales (CNN).</p>
-                    <a href="https://github.com/tu-usuario/proyecto1" target="_blank">Ver Proyecto</a>
-                </div>
 
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <h3>Proyecto 2: Análisis de Sentimiento</h3>
-                    <p>Análisis de sentimiento utilizando técnicas de procesamiento de lenguaje natural (NLP).</p>
-                    <a href="https://github.com/tu-usuario/proyecto2" target="_blank">Ver Proyecto</a>
-                </div>
+            <div class="project-card">
+                <h3>Proyecto 1: Clasificación de Imágenes</h3>
+                <p>Clasificación de imágenes utilizando redes neuronales convolucionales (CNN).</p>
+                <a href="https://github.com/tu-usuario/proyecto1" target="_blank">Ver Proyecto</a>
+            </div>
 
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <h3>Proyecto 3: Predicción de Precios</h3>
-                    <p>Modelo de regresión lineal para la predicción de precios de propiedades inmobiliarias.</p>
-                    <a href="https://github.com/tu-usuario/proyecto3" target="_blank">Ver Proyecto</a>
-                </div>
+            <div class="project-card">
+                <h3>Proyecto 2: Análisis de Sentimiento</h3>
+                <p>Análisis de sentimiento utilizando técnicas de procesamiento de lenguaje natural (NLP).</p>
+                <a href="https://github.com/tu-usuario/proyecto2" target="_blank">Ver Proyecto</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Proyecto 3: Predicción de Precios</h3>
+                <p>Modelo de regresión lineal para la predicción de precios de propiedades inmobiliarias.</p>
+                <a href="https://github.com/tu-usuario/proyecto3" target="_blank">Ver Proyecto</a>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section">
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
         <div class="container">
             <h2>Contacto</h2>
-            <p>¿Tienes alguna pregunta o quieres colaborar en un proyecto? ¡No dudes en contactarme!</p>
+            <p>Si tienes alguna pregunta o quieres colaborar en algún proyecto, ¡no dudes en contactarme!</p>
             <p><strong>Email:</strong> tu-email@dominio.com</p>
+            <p><a href="mailto:tu-email@dominio.com">Enviar un correo</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Tu Nombre | <a href="https://github.com/tu-usuario">GitHub</a></p>
-        </div>
+        <p>&copy; 2025 Tu Nombre | <a href="https://github.com/tu-usuario" target="_blank">GitHub</a></p>
     </footer>
 
 </body>
