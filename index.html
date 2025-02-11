@@ -3,60 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Proyectos de ML</title>
+    <meta name="description" content="Portafolio de Proyectos de Machine Learning y Análisis de Datos">
+    <title>Mi Portafolio de Proyectos</title>
+    
+    <!-- Estilos incrustados -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+        /* General */
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
         }
-        h1 {
-            background-color: #4CAF50;
-            color: white;
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Contenedor central */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #24292f;
             padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
         }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
+        header .logo {
+            width: 50px;
+            height: auto;
+            display: inline-block;
+            margin-right: 20px;
         }
-        .project {
+        header nav {
+            display: inline-block;
+            float: right;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(to right, #4CAF50, #388E3C);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            margin-top: 60px;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .banner h1 span {
+            color: #ffeb3b;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        /* Sección de proyectos */
+        .section {
+            padding: 60px 0;
+        }
+        .project-cards {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .project-card {
             background-color: white;
             border: 1px solid #ddd;
-            padding: 15px;
             border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        a {
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            margin-bottom: 20px;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #24292f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
             color: #4CAF50;
             text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Mi Portafolio de Proyectos de Machine Learning</h1>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <nav>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="projects">
-        <div class="project">
-            <h2>Proyecto 1: Clasificación de Imágenes</h2>
-            <p>Descripción breve del proyecto y los resultados obtenidos.</p>
-            <a href="https://github.com/tu-usuario/proyecto1">Ver Proyecto</a>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Hola, soy <span>Tu Nombre</span></h1>
+            <p>Un apasionado del Machine Learning y Análisis de Datos. Aquí encontrarás algunos de mis proyectos más recientes.</p>
         </div>
-        <div class="project">
-            <h2>Proyecto 2: Análisis de Datos con Pandas</h2>
-            <p>Descripción breve del proyecto y cómo se utilizaron bibliotecas como Pandas.</p>
-            <a href="https://github.com/tu-usuario/proyecto2">Ver Proyecto</a>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="project-cards">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <h3>Proyecto 1: Clasificación de Imágenes</h3>
+                    <p>Clasificación de imágenes utilizando redes neuronales convolucionales (CNN).</p>
+                    <a href="https://github.com/tu-usuario/proyecto1" target="_blank">Ver Proyecto</a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <h3>Proyecto 2: Análisis de Sentimiento</h3>
+                    <p>Análisis de sentimiento utilizando técnicas de procesamiento de lenguaje natural (NLP).</p>
+                    <a href="https://github.com/tu-usuario/proyecto2" target="_blank">Ver Proyecto</a>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <h3>Proyecto 3: Predicción de Precios</h3>
+                    <p>Modelo de regresión lineal para la predicción de precios de propiedades inmobiliarias.</p>
+                    <a href="https://github.com/tu-usuario/proyecto3" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h2>Proyecto 3: Predicción con Regresión Lineal</h2>
-            <p>Descripción breve de un modelo de regresión que predice precios.</p>
-            <a href="https://github.com/tu-usuario/proyecto3">Ver Proyecto</a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o quieres colaborar en un proyecto? ¡No dudes en contactarme!</p>
+            <p><strong>Email:</strong> tu-email@dominio.com</p>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tu Nombre | <a href="https://github.com/tu-usuario">GitHub</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
