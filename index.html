@@ -3,60 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Proyectos de ML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1 {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-        .project {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+    <title>Mi Portafolio de Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Mi Portafolio de Proyectos de Machine Learning</h1>
+    <!-- Header -->
+    <header>
+        <h1>Mi Portafolio de Machine Learning y Análisis de Datos</h1>
+        <p>Bienvenido a mi portafolio de proyectos. Aquí encontrarás varios proyectos relacionados con análisis de datos y machine learning.</p>
+    </header>
 
-    <div class="projects">
-        <div class="project">
-            <h2>Proyecto 1: Clasificación de Imágenes</h2>
-            <p>Descripción breve del proyecto y los resultados obtenidos.</p>
-            <a href="https://github.com/tu-usuario/proyecto1">Ver Proyecto</a>
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-list">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <h3>Proyecto 1: Clasificación de Imágenes</h3>
+                <p>Este proyecto utiliza redes neuronales convolucionales (CNNs) para la clasificación de imágenes de distintas categorías.</p>
+                <a href="https://github.com/tu-usuario/proyecto1" target="_blank">Ver Proyecto</a>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <h3>Proyecto 2: Análisis de Sentimiento en Tweets</h3>
+                <p>Este proyecto realiza un análisis de sentimiento en tweets usando procesamiento de lenguaje natural (NLP) y Machine Learning.</p>
+                <a href="https://github.com/tu-usuario/proyecto2" target="_blank">Ver Proyecto</a>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <h3>Proyecto 3: Predicción de Precios de Casas</h3>
+                <p>Este proyecto utiliza modelos de regresión para predecir los precios de casas en diferentes ciudades.</p>
+                <a href="https://github.com/tu-usuario/proyecto3" target="_blank">Ver Proyecto</a>
+            </div>
         </div>
-        <div class="project">
-            <h2>Proyecto 2: Análisis de Datos con Pandas</h2>
-            <p>Descripción breve del proyecto y cómo se utilizaron bibliotecas como Pandas.</p>
-            <a href="https://github.com/tu-usuario/proyecto2">Ver Proyecto</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 3: Predicción con Regresión Lineal</h2>
-            <p>Descripción breve de un modelo de regresión que predice precios.</p>
-            <a href="https://github.com/tu-usuario/proyecto3">Ver Proyecto</a>
-        </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Creado por <strong>Tu Nombre</strong> | <a href="https://github.com/tu-usuario">Ver mi GitHub</a></p>
+    </footer>
 
 </body>
 </html>
