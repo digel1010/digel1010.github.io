@@ -69,14 +69,15 @@ body {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita que la imagen sobresalga */
 }
 
-/* Modificaciones para la imagen */
 .project-image {
     width: 40%;
-    height: 300px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionar */
-    object-position: center; /* Centra la imagen en su contenedor */
+    height: 300px; /* Ajusta la altura de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el área completa */
+    background-position: center; /* Centra la imagen */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
