@@ -80,7 +80,6 @@ body {
     background-repeat: no-repeat; /* Asegura que la imagen no se repita */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    object-fit: contain; /* Ajuste para no recortar la imagen */
 }
 
 .project-details {
