@@ -72,12 +72,16 @@ body {
     overflow: hidden; /* Evita que la imagen sobresalga */
 }
 
+/* Contenedor de la imagen */
 .project-image {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
     width: 40%;
-    height: 300px; /* Mantén la altura de la imagen */
-    background-size: contain; /* Ajusta la imagen para que se vea completamente */
-    background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
-    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    height: 300px; /* Ajusta la altura del contenedor de la imagen */
+    background-size: contain; /* Asegura que la imagen sea visible completa */
+    background-position: center center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
