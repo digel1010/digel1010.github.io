@@ -74,22 +74,22 @@ body {
 
 /* Contenedor de la imagen */
 .project-image {
+    width: 40%; /* La imagen ocupa el 40% del espacio de la tarjeta */
     display: flex;
     justify-content: center; /* Centra la imagen horizontalmente */
     align-items: center; /* Centra la imagen verticalmente */
-    width: 40%;
-    height: 300px; /* Ajusta la altura del contenedor de la imagen */
-    overflow: hidden; /* Evita que la imagen se desborde */
+    padding: 10px;
 }
 
 .project-image img {
-    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: contain; /* Ajusta la imagen para que no se recorte */
 }
 
+/* Detalles del Proyecto (texto) */
 .project-details {
-    width: 60%;
+    width: 60%; /* El texto ocupa el 60% restante */
     padding: 20px;
 }
 
