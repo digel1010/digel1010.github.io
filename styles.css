@@ -79,11 +79,13 @@ body {
     align-items: center; /* Centra la imagen verticalmente */
     width: 40%;
     height: 300px; /* Ajusta la altura del contenedor de la imagen */
-    background-size: contain; /* Asegura que la imagen sea visible completa */
-    background-position: center center; /* Centra la imagen dentro del contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.project-image img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que no se recorte */
 }
 
 .project-details {
