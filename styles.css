@@ -75,8 +75,8 @@ body {
 .project-image {
     width: 40%;
     height: 300px; /* Ajusta la altura de las imágenes */
-    background-size: cover; /* Ajusta las imágenes para cubrir el contenedor sin distorsionar */
-    background-position: center; /* Centra la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionar */
+    object-position: center; /* Centra la imagen en su contenedor */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
