@@ -74,9 +74,9 @@ body {
 
 .project-image {
     width: 40%;
-    height: 300px; /* Ajusta la altura de la imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
+    height: 300px; /* Mantén la altura de la imagen */
+    background-size: contain; /* Ajusta la imagen para que se vea completamente */
+    background-position: center center; /* Centra la imagen tanto vertical como horizontalmente */
     background-repeat: no-repeat; /* Asegura que la imagen no se repita */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -98,4 +98,15 @@ body {
 }
 
 .project-details .btn {
-    display
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-details .btn:hover {
+    background-color: #0056b3;
+}
