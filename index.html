@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio de Data Science</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #007bff;
-    }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .project {
-      background: #fff;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 30%;
-    }
-    .project h3 {
-      color: #007bff;
-    }
-    .project p {
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenidos a mi portafolio de Data Science</h1>
-  <div class="projects">
-    <div class="project">
-      <h3>Proyecto 1: Análisis de Datos de Ventas</h3>
-      <p>Un análisis de las tendencias de ventas de productos utilizando Pandas y Matplotlib.</p>
+    <div class="container">
+        <!-- Columna Izquierda -->
+        <div class="sidebar">
+            <h1>Tu Nombre</h1>
+            <p>Data Scientist / Data Analyst</p>
+            <p>Contacto: tu.email@example.com</p>
+            <div class="about">
+                <h3>Sobre Mí</h3>
+                <p>Breve descripción sobre ti, tus habilidades y tu pasión por la ciencia de datos.</p>
+            </div>
+        </div>
+
+        <!-- Columna de Proyectos -->
+        <div class="projects">
+            <h2>Proyectos</h2>
+
+            <!-- Proyecto 1 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('ruta-a-imagen1.jpg');"></div>
+                <div class="project-details">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1. Un breve resumen de qué trata el proyecto.</p>
+                    <p><strong>Skills:</strong> Python, SQL, Machine Learning</p>
+                    <a href="https://github.com/tuusuario/proyecto1" class="btn">Ver Código</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project">
+                <div class="project-image" style="background-image: url('ruta-a-imagen2.jpg');"></div>
+                <div class="project-details">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2. Un breve resumen de qué trata el proyecto.</p>
+                    <p><strong>Skills:</strong> Python, Data Analysis, Visualization</p>
+                    <a href="https://github.com/tuusuario/proyecto2" class="btn">Ver Código</a>
+                </div>
+            </div>
+
+            <!-- Añadir más proyectos aquí -->
+
+        </div>
     </div>
-    <div class="project">
-      <h3>Proyecto 2: Predicción de Precios de Viviendas</h3>
-      <p>Predicción de precios de casas usando regresión lineal y scikit-learn.</p>
-    </div>
-    <div class="project">
-      <h3>Proyecto 3: Clasificación de Imágenes con CNN</h3>
-      <p>Un modelo de red neuronal convolucional para la clasificación de imágenes.</p>
-    </div>
-  </div>
 </body>
 </html>
-
