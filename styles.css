@@ -6,22 +6,28 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Sección de bienvenida */
 #intro {
-    background-color: #007BFF;
-    color: white;
+    background: #333;
     padding: 60px 0;
     text-align: center;
 }
 
-#intro .container h2 {
+#intro h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-#intro .container p {
+#intro p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    color: #fff;
 }
 
 /* Sección de proyectos */
