@@ -7,127 +7,86 @@
 }
 
 body {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-}
-
-/* Sección de navegación */
-header {
-    background: #333;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo h1 {
-    font-size: 2rem;
-    color: #f4f4f4;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Sección de bienvenida */
 #intro {
-    background: #444;
+    background: #333;
     padding: 60px 0;
     text-align: center;
 }
 
 #intro h2 {
     font-size: 2.5rem;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 #intro p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Sección sobre mí */
-#about {
-    background: #333;
-    padding: 60px 0;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1rem;
+    color: #fff;
 }
 
 /* Sección de proyectos */
 #projects {
     padding: 60px 0;
-    text-align: center;
+    background-color: #fff;
 }
 
-#projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+#projects .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.project {
-    background: #444;
-    margin: 20px;
+/* Cuadrícula de proyectos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    grid-template-rows: repeat(4, 300px); /* 4 filas con altura fija */
+}
+
+/* Estilo de cada proyecto */
+.project-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Efecto de hover */
+}
+
+.project-image {
+    height: 200px; /* Alto de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-text {
     padding: 20px;
-    border-radius: 8px;
 }
 
-.project h3 {
-    font-size: 1.8rem;
+.project-text h3 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
-.project p {
-    font-size: 1.1rem;
+.project-text p {
+    font-size: 1rem;
+    color: #666;
 }
 
-/* Sección de contacto */
-#contact {
-    background: #333;
-    padding: 60px 0;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact a {
-    color: #007BFF;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Pie de página */
+/* Estilo del pie de página */
 footer {
-    background: #222;
+    background: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
-    color: #f4f4f4;
 }
