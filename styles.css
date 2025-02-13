@@ -6,6 +6,24 @@
     font-family: Arial, sans-serif;
 }
 
+/* Sección de bienvenida */
+#intro {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#intro .container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#intro .container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 /* Sección de proyectos */
 #projects {
     padding: 60px 0;
