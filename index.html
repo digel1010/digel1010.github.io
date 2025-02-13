@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-    <!-- Sección de bienvenida -->
-    <section id="intro">
-        <div class="container">
-            <h2>Bienvenido a mi portafolio</h2>
-            <p>En este portafolio, encontrarás una selección de proyectos que he desarrollado en el campo de la Ciencia de Datos y el Análisis de Datos. Cada uno de estos proyectos refleja mi enfoque en resolver problemas complejos mediante el uso de herramientas y técnicas avanzadas. A través de este trabajo, he adquirido y perfeccionado habilidades clave que me han permitido aplicar soluciones efectivas en diversos contextos.</p>
-        </div>
-    </section>
-
     <!-- Sección de proyectos -->
     <section id="projects">
         <div class="container">
             <div class="project-grid">
                 <!-- Proyecto 1 -->
-                <div class="project-item">
+                <div class="project-item" onclick="openModal('modal-1')">
                     <div class="project-image" style="background-image: url('https://raw.githubusercontent.com/digel1010/digel1010.github.io/main/images/film%20junk.jpg');"></div>
                     <div class="project-text">
                         <h3>Modelo de clasificación de reseñas de películas 🎬</h3>
                         <p>Modelo de Machine Learning 🤖 que clasifica automáticamente las reseñas de películas 🍿 en positivas o negativas 🚫✅, utilizando un conjunto de datos de IMDB 📊. A través de un análisis exploratorio de datos 🔍 y técnicas de preprocesamiento de texto 🧹, se entrenan varios modelos para alcanzar una precisión F1 superior a 0.85 📈, optimizando la clasificación de críticas y facilitando la filtración automática de contenido 📚. Este proyecto pone en práctica técnicas de clasificación de texto y análisis de sentimientos para construir un sistema automatizado para filtrar críticas de películas 🎥.</p>
                     </div>
                 </div>
+
                 <!-- Proyecto 2 -->
-                <div class="project-item">
-                    <div class="project-image" style="background-image: url('proyecto2.jpg');"></div>
+                <div class="project-item" onclick="openModal('modal-2')">
+                    <div class="project-image" style="background-image: url('https://raw.githubusercontent.com/digel1010/digel1010.github.io/main/images/proyecto2.jpg');"></div>
                     <div class="project-text">
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción breve del proyecto 2.</p>
+                        <h3>Clasificación de imágenes con Deep Learning 🧠</h3>
+                        <p>Modelo que utiliza redes neuronales profundas para clasificar imágenes en diversas categorías...</p>
                     </div>
                 </div>
+
                 <!-- Proyecto 3 -->
-                <div class="project-item">
-                    <div class="project-image" style="background-image: url('proyecto3.jpg');"></div>
+                <div class="project-item" onclick="openModal('modal-3')">
+                    <div class="project-image" style="background-image: url('https://raw.githubusercontent.com/digel1010/digel1010.github.io/main/images/proyecto3.jpg');"></div>
                     <div class="project-text">
-                        <h3>Proyecto 3</h3>
-                        <p>Descripción breve del proyecto 3.</p>
+                        <h3>Reconocimiento de voz en tiempo real 🎤</h3>
+                        <p>Sistema que reconoce comandos de voz en tiempo real y responde de manera automática...</p>
                     </div>
                 </div>
+
                 <!-- Proyecto 4 -->
-                <div class="project-item">
-                    <div class="project-image" style="background-image: url('proyecto4.jpg');"></div>
+                <div class="project-item" onclick="openModal('modal-4')">
+                    <div class="project-image" style="background-image: url('https://raw.githubusercontent.com/digel1010/digel1010.github.io/main/images/proyecto4.jpg');"></div>
                     <div class="project-text">
-                        <h3>Proyecto 4</h3>
-                        <p>Descripción breve del proyecto 4.</p>
+                        <h3>Aplicación móvil para control de hábitos 📱</h3>
+                        <p>Una app que ayuda a controlar tus hábitos y te motiva a mejorar tu productividad diaria...</p>
                     </div>
                 </div>
-                <!-- Agrega más proyectos aquí si lo deseas -->
             </div>
         </div>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Tu Nombre | Todos los derechos reservados</p>
-    </footer>
+    <!-- Modal 1 -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-1')">&times;</span>
+            <div class="modal-header">
+                <h2>Modelo de clasificación de reseñas de películas 🎬</h2>
+            </div>
+            <div class="modal-body">
+                <p>Modelo de Machine Learning 🤖 que clasifica automáticamente las reseñas de películas 🍿 en positivas o negativas 🚫✅, utilizando un conjunto de datos de IMDB 📊. A través de un análisis exploratorio de datos 🔍 y técnicas de preprocesamiento de texto 🧹, se entrenan varios modelos para alcanzar una precisión F1 superior a 0.85 📈, optimizando la clasificación de críticas y facilitando la filtración automática de contenido 📚. Este proyecto pone en práctica técnicas de clasificación de texto y análisis de sentimientos para construir un sistema automatizado para filtrar críticas de películas 🎥.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/mi-repo" class="btn">Ver Código Completo</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal 2 -->
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-2')">&times;</span>
+            <div class="modal-header">
+                <h2>Clasificación de imágenes con Deep Learning 🧠</h2>
+            </div>
+            <div class="modal-body">
+                <p>Modelo que utiliza redes neuronales profundas para clasificar imágenes en diversas categorías...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/mi-repo" class="btn">Ver Código Completo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-3')">&times;</span>
+            <div class="modal-header">
+                <h2>Reconocimiento de voz en tiempo real 🎤</h2>
+            </div>
+            <div class="modal-body">
+                <p>Sistema que reconoce comandos de voz en tiempo real y responde de manera automática...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/mi-repo" class="btn">Ver Código Completo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-4')">&times;</span>
+            <div class="modal-header">
+                <h2>Aplicación móvil para control de hábitos 📱</h2>
+            </div>
+            <div class="modal-body">
+                <p>Una app que ayuda a controlar tus hábitos y te motiva a mejorar tu productividad diaria...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/mi-repo" class="btn">Ver Código Completo</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
