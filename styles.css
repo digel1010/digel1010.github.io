@@ -7,112 +7,127 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
     line-height: 1.6;
 }
 
-/* Contenedor Principal */
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Columna Izquierda */
-.sidebar {
-    width: 25%;
-    background-color: #fff;
+/* Sección de navegación */
+header {
+    background: #333;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar h1 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.sidebar p {
-    margin-bottom: 10px;
-}
-
-.sidebar .about {
-    margin-top: 20px;
-}
-
-.sidebar .about h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.sidebar .about p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Columna de Proyectos */
-.projects {
-    width: 75%;
-    padding: 20px;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #333;
-}
-
-/* Proyecto - Estilo de cada tarjeta */
-.project {
     display: flex;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Evita que la imagen sobresalga */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Contenedor de la imagen */
-.project-image {
-    width: 40%; /* La imagen ocupa el 40% del espacio de la tarjeta */
+header .logo h1 {
+    font-size: 2rem;
+    color: #f4f4f4;
+}
+
+header nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    padding: 10px;
+    gap: 20px;
 }
 
-.project-image img {
-    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Ajusta la imagen para que no se recorte */
-}
-
-/* Detalles del Proyecto (texto) */
-.project-details {
-    width: 60%; /* El texto ocupa el 60% restante */
-    padding: 20px;
-}
-
-.project-details h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.project-details p {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.project-details .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+header nav ul li a {
+    color: #f4f4f4;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 1.1rem;
 }
 
-.project-details .btn:hover {
-    background-color: #0056b3;
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de bienvenida */
+#intro {
+    background: #444;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección sobre mí */
+#about {
+    background: #333;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+/* Sección de proyectos */
+#projects {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: #444;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+}
+
+/* Sección de contacto */
+#contact {
+    background: #333;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #007BFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    color: #f4f4f4;
 }
