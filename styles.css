@@ -165,6 +165,10 @@ body {
     gap: 20px;
 }
 
+.section-title {
+    margin-bottom: 30px; /* Ajusta este valor según sea necesario */
+}
+
 /* Estilo de cada proyecto */
 .project-item {
     background-color: #fff;
